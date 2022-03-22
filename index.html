@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html"><span>Red</span>tangle</a>
+            <img id="mobile-cta" class="mobile-menu" src="/photos/hamburger-menu.svg" alt="Open navigation">
+            
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit"src="/photos/exit.svg" alt="Close navigation">
+                <ul class ="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class = "hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">The Big &amp; New Horizon</p>
+                <h1>Seen This One Yet!</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Click For More</a>
+                    <a href="#" class="watch-video-cta">
+                    <img src="photos/recorder.svg" width="50px" height="50px" alt="Watch A Video">Watch A Video
+                    </a>
+                </div>
+            </div>
+            <img src="photos/app icon.jpg"  class="hero-img" alt="illustration">
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <ul class="feature-list">
+                <li>Hero is real</li>
+                <li>Hero is too real</li>
+                <li>Hero is freaking real</li>
+                <li>Hero is absolutely real</li>
+                <li>Hero is undoubtly real</li>
+                <li>Hero is amazingly real</li>
+                
+                
+            </ul>
+            <img src="/photos/hero img.jpg" alt="photos">
+        </div>
+
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/photos/face.jpg" alt="Person">
+                    <blockquote>"The thing about this web is that it is so random"</blockquote>
+                    <cite>-Ben Obama</cite>
+                </li>
+                <li>
+                    <img src="/photos/face.jpg" alt="Person">
+                    <blockquote>"The thing about this web is that it is so random"</blockquote>
+                    <cite>-Ben Obama</cite>
+                </li>
+                <li>
+                    <img src="/photos/face.jpg" alt="Person">
+                    <blockquote>"The thing about this web is that it is so random"</blockquote>
+                    <cite>-Ben Obama</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const mobileBtn=document.getElementById('mobile-cta')
+              nav=document.querySelector('nav')
+              mobileBtnExit=document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click',()=>{
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click',()=>{
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+</body>
+</html>
